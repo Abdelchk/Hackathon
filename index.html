@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistant Intelligent</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Gilbot</h1>
+    </header>
+    <main>
+        <!-- Zone de conversation -->
+        <div class="conversation-container">
+            <div class="conversation">
+                <div class="message assistant">Bonjour, je suis Gilbot comment puis-je vous aider ?</div>
+            </div>
+        
+        <!-- Formulaire pour envoyer des messages -->
+            <form id="chat-form"  method="post">
+                <input type="text" id="user-input" name="userMessage" placeholder="Écrivez votre message ici...">
+                <input type="hidden" name="currentTime" id="current-time">
+                <input type="hidden" name="currentDate" id="current-date">
+                <input type="hidden" name="assistantResponse" id="assistant-response"> <!-- Assurez-vous que ce champ existe -->
+                <button type="submit">Envoyer</button> <!-- Champ caché pour stocker la réponse de l'assistant -->
+            </form>
+            <p id="error-message"></p>
+        </div>
+    </main>
+</body>
+</html>

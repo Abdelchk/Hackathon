@@ -1,0 +1,139 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6E675F;
+    background-image: url('https://t4.ftcdn.net/jpg/01/95/42/21/360_F_195422106_cNzNOmCmgf0QbxDVfuOoEc2zEl0gYIL0.jpg');
+    background-repeat: repeat; /* Pour éviter la répétition de l'image */
+    background-attachment: fixed; /* Pour garder l'image en place lors du défilement */
+    background-position: center center; /* Pour centrer l'image horizontalement et verticalement */
+}
+
+header {
+    background-color: #4D4941;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#chat-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #E8CF8A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Styles pour l'assistant */
+.message.assistant {
+    color: #333; /* Couleur du texte */
+    border-radius: 15px; /* Coins arrondis */
+    padding: 10px; /* Espacement interne */
+    margin-bottom: 10px; /* Marge en bas */
+    max-width: 50%; /* Largeur maximale */
+    align-self: flex-start; /* Alignement à gauche */
+    background-color: #E3B23C; /* Couleur de fond pour les messages de l'assistant */
+}
+
+/* Styles pour les messages de l'utilisateur */
+.message.user {
+    color: #333; /* Couleur du texte */
+    border-radius: 15px; /* Coins arrondis */
+    padding: 10px; /* Espacement interne */
+    margin-bottom: 10px; /* Marge en bas */
+    max-width: 80%; /* Largeur maximale */
+    align-self: flex-end; /* Alignement à droite */
+    background-color: #F3F2E4; /* Couleur de fond pour les messages de l'utilisateur */
+}
+
+/* Style pour la petite horloge avec la date et l'heure */
+.message small {
+    display: block; /* Affichage en bloc pour une nouvelle ligne */
+    color: #777; /* Couleur du texte de l'horloge */
+    font-size: 12px; /* Taille de la police de l'horloge */
+    text-align: right; /* Alignement à droite */
+}
+
+/* Style pour le bouton d'envoi */
+#chat-form button {
+    background-color: #E8CF8A; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none; /* Suppression de la bordure du bouton */
+    border-radius: 5px; /* Coins arrondis du bouton */
+    padding: 10px 20px; /* Espacement interne du bouton */
+    margin-left: 10px;
+    cursor: pointer; /* Curseur de la souris en main */
+    transition: background-color 0.3s; /* Transition de couleur de fond */
+}
+
+/* Styles pour le conteneur de conversation */
+.conversation-container {
+    border: 2px solid #4D4941; /* Bordure de 2px solide avec une couleur différente */
+    border-radius: 20px; /* Coins arrondis */
+    padding: 10px; /* Espacement interne */
+    margin-bottom: 20px; /* Marge en bas */
+    background-color: #fff;
+    max-height: 100vh; /* Hauteur maximale égale à la hauteur de la vue */
+    overflow-y: auto; /* Défilement vertical automatique lorsque le contenu dépasse la hauteur maximale */
+}
+
+  
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+background: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: #ECE4C4;
+border-radius: 20px;
+border: 3px solid #ECE4C4;
+}
+
+/* Styles pour la conversation */
+.conversation {
+    background-color: #fff;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+    max-height: 300px;
+    display: flex; /* Alignez les éléments en colonne */
+    flex-direction: column; /* Alignez les éléments en colonne */
+    padding: 10px; /* Espacement interne */
+    border-radius: 15px; /* Coins arrondis pour les messages dans la conversation */
+    border: 1px solid #fff;
+}
